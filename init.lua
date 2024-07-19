@@ -388,6 +388,13 @@ require('lazy').setup({
                     end,
                 },
             }
+            require('lspconfig').ccls.setup {
+                init_options = {
+                    cache = {
+                        directory = '.ccls-cache',
+                    },
+                },
+            }
         end,
     },
 
@@ -571,7 +578,7 @@ require('lazy').setup({
         'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate',
         opts = {
-            ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'zig', 'latex' },
+            ensure_installed = { 'bash', 'c', 'diff', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'zig', 'latex' },
             auto_install = true,
             highlight = {
                 enable = true,
