@@ -1,3 +1,5 @@
+-- TODO: split up config file
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
